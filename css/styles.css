@@ -975,6 +975,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 40px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1010,4 +1011,126 @@ transition: fill var(--transition-dur-and-func);
 .modal-close-btn:hover .modal-close-btn-icon:hover,
 .modal-close-btn:focus .modal-close-btn-icon:focus {
     fill: var(--accent-color);
+}
+
+/* modal form  */
+
+.modal-form {
+ display: flex;
+ flex-direction: column;
+}
+.modal-form-name {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color var(--transition-dur-and-func);
+    cursor: pointer;
+}
+.modal-form-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+.modal-form-input:focus + .modal-form-input-icon {
+    fill: #2196F3;
+}
+
+.modal-form-input-desc {
+    display: block;
+    margin-bottom: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: #757575;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17px;
+        letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    cursor: pointer;
+    transition: border-color var(--transition-dur-and-func);
+}
+.modal-form-message:focus {
+    outline: none;
+  border-color: #2196F3;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+
+}
+
+.modal-form-check {
+    appearance: none;
+    margin-right: 12px;
+}
+
+.modal-form-check-desc {
+    position: relative;
+}
+.checkbox-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%);
+   fill: #FFFFFF;
+       border: 2px solid #212121;
+        border-radius: 2px;
+}
+
+.modal-form-input-wrapper {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.modal-form-input-icon {
+   display: block;
+   position: absolute;
+   left: 12px;
+   top: 50%;
+   transform: translate(0, -50%);
+   transition: fill var(--transition-dur-and-func);
+   cursor: pointer;
 }
