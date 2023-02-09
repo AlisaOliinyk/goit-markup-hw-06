@@ -277,12 +277,14 @@ address {
             line-height: 1.875;
             cursor: pointer;
             letter-spacing: 0.06em;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             
 }
 
 .button-primary:hover,
 .button-primary:focus {
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+background-color: #188CE8;
 }
 
 /* section about us */
@@ -751,7 +753,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .subscription-input {
     width: 358px;
     height: 50px;
-    padding: 15px 295px 15px 16px;
+    padding: 15px 15px 16px;
     margin-right: 12px;
       background: #2F303A;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -974,7 +976,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;
+    /* height: 581px; */
     padding: 40px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1125,6 +1127,32 @@ transition: fill var(--transition-dur-and-func);
         
 }
 
+.modal-form-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+background: #2196F3;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 
 .checkbox-icon:focus {
     fill: #2196F3;
@@ -1155,4 +1183,5 @@ transition: fill var(--transition-dur-and-func);
    transform: translate(0, -50%);
    transition: fill var(--transition-dur-and-func);
    cursor: pointer;
+   
 }
